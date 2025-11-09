@@ -1,0 +1,41 @@
+datadog:
+  apiKeyExistingSecret: datadog-secret
+  appKeyExistingSecret: datadog-secret
+
+  site: "us5.datadoghq.com"
+  clusterName: "my-k8s-cluster"
+  tags:
+    - "env:production"
+    - "cluster:my-k8s-cluster"
+  
+  logs:
+    enabled: true
+    containerCollectAll: true
+  apm:
+    portEnabled: true
+  processAgent:
+    enabled: true
+  networkMonitoring:
+    enabled: true
+
+clusterAgent:
+  enabled: true
+  replicas: 2
+  pdb:
+    create: true
+  metricsProvider:
+    enabled: true
+  tolerations:
+    - operator: "Exists"
+
+agents:
+  enabled: true
+  useHostNetwork: true
+  tolerations:
+    - operator: "Exists"
+
+clusterChecksRunner:
+  enabled: true
+  replicas: 2
+  tolerations:
+    - operator: "Exists"

@@ -1,0 +1,55 @@
+<%- include('layout', {body: `
+<section class="hero">
+<div class="hero-content">
+<h1>Dream Come True Information Technology</h1>
+<p class="hero-tagline">${data.tagline}</p>
+<div class="hero-buttons">
+<a href="/about" class="btn btn-primary">Learn More</a>
+<a href="/services" class="btn btn-secondary">Our Services</a>
+</div>
+</div>
+</section>
+<section class="stats-section">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-item">
+<h3>${data.stats.members}</h3>
+<p>Community Members</p>
+</div>
+<div class="stat-item">
+<h3>${data.stats.employees}</h3>
+<p>Employees</p>
+</div>
+<div class="stat-item">
+<h3>${data.stats.founded}</h3>
+<p>Founded</p>
+</div>
+</div>
+</div>
+</section>
+<section class="about-preview">
+<div class="container">
+<div class="about-content">
+<h2>Transforming Education, Empowering Communities</h2>
+<p>${data.description}</p>
+<p>With over 50,000 members, we have been an active partner in developing our thriving population via online programs and services that cover financial technology, real estate, blockchain, digital marketing, and many other relative courses with affordable pricing.</p>
+</div>
+</div>
+</section>
+<section class="services-preview">
+<div class="container">
+<h2>Our Core Services</h2>
+<div class="services-grid">
+           ${data.services.slice(0, 4).map(service => `
+<div class="service-card">
+<h4>${service}</h4>
+<p>Comprehensive solutions and education in ${service.toLowerCase()}.</p>
+</div>
+           `).join('')}
+</div>
+<div class="text-center">
+<a href="/services" class="btn btn-outline">View All Services</a>
+</div>
+</div>
+</section>
+`}) %>

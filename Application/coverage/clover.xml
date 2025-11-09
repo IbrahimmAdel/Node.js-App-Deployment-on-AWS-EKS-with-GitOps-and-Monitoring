@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1762690777892" clover="3.2.0">
+  <project timestamp="1762690777893" name="All files">
+    <metrics statements="33" coveredstatements="28" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="4" elements="45" coveredelements="34" complexity="0" loc="33" ncloc="33" packages="2" files="2" classes="2"/>
+    <package name="dreamcometrue-code">
+      <metrics statements="22" coveredstatements="17" conditionals="6" coveredconditionals="2" methods="3" coveredmethods="1"/>
+      <file name="app.js" path="/home/ibrahim/dreamcometrue-code/app.js">
+        <metrics statements="22" coveredstatements="17" conditionals="6" coveredconditionals="2" methods="3" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="1" falsecount="3"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="54" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="dreamcometrue-code.routes">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="index.js" path="/home/ibrahim/dreamcometrue-code/routes/index.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="60" count="3" type="stmt"/>
+        <line num="61" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

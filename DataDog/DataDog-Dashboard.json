@@ -1,0 +1,51 @@
+{
+  "layout_type": "ordered",
+  "title": "Kubernetes Nodes and Pods Monitoring",
+  "description": "",
+  "widgets": [
+    {
+      "definition": {
+        "type": "timeseries",
+        "title": "Node CPU Usage",
+        "requests": [
+          {
+            "q": "avg:kubernetes.cpu.usage.total{*} by {kube_node_name}"
+          }
+        ]
+      }
+    },
+    {
+      "definition": {
+        "type": "timeseries",
+        "title": "Node Memory Usage", 
+        "requests": [
+          {
+            "q": "avg:kubernetes.memory.usage{*} by {kube_node_name}"
+          }
+        ]
+      }
+    },
+    {
+      "definition": {
+        "type": "timeseries",
+        "title": "Pod CPU Usage",
+        "requests": [
+          {
+            "q": "avg:kubernetes.cpu.usage.total{*} by {pod_name}"
+          }
+        ]
+      }
+    },
+    {
+      "definition": {
+        "type": "timeseries", 
+        "title": "Pod Memory Usage",
+        "requests": [
+          {
+            "q": "avg:kubernetes.memory.usage{*} by {pod_name}"
+          }
+        ]
+      }
+    }
+  ]
+}

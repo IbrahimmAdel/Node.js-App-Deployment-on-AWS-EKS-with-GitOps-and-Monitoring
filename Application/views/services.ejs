@@ -1,0 +1,34 @@
+<%- include('layout', {body: `
+<section class="page-header">
+<div class="container">
+<h1>Our Services</h1>
+<p>Comprehensive IT and educational solutions</p>
+</div>
+</section>
+<section class="services-content">
+<div class="container">
+<div class="services-grid-full">
+           ${data.services.map(service => `
+<div class="service-card-full">
+<div class="service-icon">
+<!-- Add appropriate icons for each service -->
+<span>🔧</span>
+</div>
+<h3>${service}</h3>
+<p>Professional services and educational programs in ${service.toLowerCase()}. We provide cutting-edge solutions tailored to your needs.</p>
+<a href="#" class="service-link">Learn More →</a>
+</div>
+           `).join('')}
+</div>
+</div>
+</section>
+<section class="cta-section">
+<div class="container">
+<div class="cta-content">
+<h2>Ready to Transform Your Future?</h2>
+<p>Join our community of 50,000+ members and start your journey in FinTech education today.</p>
+<a href="https://dreamcometrue.ai" class="btn btn-primary">Visit Our Main Site</a>
+</div>
+</div>
+</section>
+`}) %>

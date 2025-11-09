@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= title %> - Dream Come True Information Technology</title>
+<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+<div class="nav-container">
+<div class="nav-logo">
+<img src="/images/logo.jpeg" alt="Dream Come True IT Logo">
+<span>Dream Come True IT</span>
+</div>
+<ul class="nav-menu">
+<li><a href="/" class="nav-link">Home</a></li>
+<li><a href="/about" class="nav-link">About</a></li>
+<li><a href="/services" class="nav-link">Services</a></li>
+</ul>
+</div>
+</nav>
+<main>
+<%- body %>
+</main>
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-section">
+<h3>Dream Come True Information Technology</h3>
+<p>Changing the world with FinTech education - one dream at a time.</p>
+</div>
+<div class="footer-section">
+<h4>Contact</h4>
+<p>Trade Centre First, Dubai</p>
+<p><a href="https://dreamcometrue.ai">dreamcometrue.ai</a></p>
+</div>
+<div class="footer-section">
+<h4>Specialties</h4>
+<div class="specialties">
+<% data.specialties.forEach(specialty => { %>
+<span class="specialty-tag"><%= specialty %></span>
+<% }); %>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2024 Dream Come True Information Technology. All rights reserved.</p>
+</div>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>

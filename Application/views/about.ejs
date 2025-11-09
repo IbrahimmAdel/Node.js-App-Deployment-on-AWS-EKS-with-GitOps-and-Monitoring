@@ -1,0 +1,50 @@
+<%- include('layout', {body: `
+<section class="page-header">
+<div class="container">
+<h1>About Us</h1>
+<p>Learn about our mission, vision, and journey</p>
+</div>
+</section>
+<section class="about-content">
+<div class="container">
+<div class="about-text">
+<h2>Our Story</h2>
+<p>${data.description}</p>
+<p>We helped enhance human's innate competitiveness in an ever-expanding marketplace that offers more room for profitability and growth.</p>
+<p>We are also opening more rooms for opportunities in the ever-dynamic real estate market and digital assets. As we open as many windows and doors for everyone, we provide a better tomorrow for our children.</p>
+<blockquote>
+               "We always believe that it takes one brave soul to change the world for the better. We have to make sure that we will leave a livable planet for our next generation. We owe it to them."
+</blockquote>
+</div>
+<div class="company-info">
+<h2>Company Information</h2>
+<div class="info-grid">
+<div class="info-item">
+<strong>Website:</strong>
+<a href="${data.contact.website}">${data.contact.website}</a>
+</div>
+<div class="info-item">
+<strong>Industry:</strong>
+<span>${data.contact.industry}</span>
+</div>
+<div class="info-item">
+<strong>Headquarters:</strong>
+<span>${data.contact.headquarters}</span>
+</div>
+<div class="info-item">
+<strong>Type:</strong>
+<span>${data.contact.type}</span>
+</div>
+<div class="info-item">
+<strong>Founded:</strong>
+<span>${data.stats.founded}</span>
+</div>
+<div class="info-item">
+<strong>Employees:</strong>
+<span>${data.stats.employees}</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+`}) %>
