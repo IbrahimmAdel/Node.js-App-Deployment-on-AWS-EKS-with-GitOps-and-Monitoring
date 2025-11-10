@@ -29,15 +29,15 @@ Terraform, AWS, Docker, Kubernetes, GitHub Actions, ArgoCD, DataDog.
 
 ## Table of Contents
 
-1. [Infrastructure as Code with Terraform](#infrastructure)
-2. [Container Orchestration](#container-orchestration)
-3. [CI/CD Pipeline (GitOps)](#cicd-pipeline-gitops)
-4. [Monitoring with Datadog](#monitoring-with-datadog)
+1. [Infrastructure as Code with Terraform](#1-infrastructure-as-code-with-terraform)
+2. [Container Orchestration](#2-container-orchestration)
+3. [CI/CD Pipeline (GitOps)](#3-cicd-pipeline-gitops)
+4. [Monitoring with Datadog](#4-monitoring-with-datadog)
+
 
 ---
 
 ## 1. Infrastructure as Code with Terraform
-
 
 The underlying cloud infrastructure is provisioned and managed using Terraform, ensuring a repeatable and version-controlled environment. The infrastructure is modularized for maintainability and follows AWS best practices.
 
@@ -396,6 +396,7 @@ helm install datadog datadog/datadog -f monitoring/datadog-values.yaml -n datado
 Datadog integration ensures proactive monitoring and operational visibility across the cluster, enabling quick response to issues and maintaining SLA.
 
 ---
+
 
 
 
