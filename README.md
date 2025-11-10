@@ -82,7 +82,7 @@ The Terraform configuration creates a complete VPC networking foundation with bo
   - Lifecycle policy retaining last 30 images
 - **Access Control**: IAM policies for EKS node group and GitHub Actions OIDC integration
 
-#### **AWS Load Balancer Controller**
+#### **AWS Load Balancer Ingress Controller**
 - **Helm Release**: `aws-load-balancer-controller` in `kube-system` namespace
 - **Version**: `1.7.2`
 - **IAM Integration**: Service account with required permissions for ALB provisioning
@@ -396,6 +396,7 @@ helm install datadog datadog/datadog -f monitoring/datadog-values.yaml -n datado
 Datadog integration ensures proactive monitoring and operational visibility across the cluster, enabling quick response to issues and maintaining SLA.
 
 ---
+
 
 
 
