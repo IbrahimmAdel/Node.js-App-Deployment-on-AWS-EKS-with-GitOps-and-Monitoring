@@ -314,13 +314,13 @@ ArgoCD UI → New App
 
 1. Developer pushes code to dreamcometrue-code repository
 2. GitHub Actions triggers CI pipeline:
-3. Builds and tests application
-4. Builds Docker image
-5. Pushes to ECR
-6. Updates image tag in dreamcometrue-k8s repository
-7. ArgoCD detects changes in dreamcometrue-k8s repository
-8. ArgoCD automatically deploys new version to EKS cluster
-9. Application is updated with zero downtime (rolling updates)
+    - Builds and tests application
+    - Builds Docker image
+    - Pushes to ECR
+    - Updates image tag in dreamcometrue-k8s repository
+3. ArgoCD detects changes in dreamcometrue-k8s repository
+4. ArgoCD automatically deploys new version to EKS cluster
+5. Application is updated with zero downtime (rolling updates)
 
 ---
 
@@ -396,6 +396,7 @@ helm install datadog datadog/datadog -f monitoring/datadog-values.yaml -n datado
 Datadog integration ensures proactive monitoring and operational visibility across the cluster, enabling quick response to issues and maintaining SLA.
 
 ---
+
 
 
 
