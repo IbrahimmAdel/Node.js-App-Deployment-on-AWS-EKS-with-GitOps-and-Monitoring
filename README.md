@@ -17,8 +17,7 @@ The key objectives of this project include:
 
 The architecture is designed for high availability, scalability, and operational efficiency.
 
-![Project Diagram](Images/Diagram.jpeg)
-
+![Project Diagram](https://github.com/IbrahimmAdel/Node.js-App-Deployment-on-AWS-EKS-with-GitOps-and-Monitoring/blob/master/Images/diagram.drawio.svg)
 ---
 
 ## **Core Technologies** 
@@ -396,6 +395,7 @@ helm install datadog datadog/datadog -f monitoring/datadog-values.yaml -n datado
 Datadog integration ensures proactive monitoring and operational visibility across the cluster, enabling quick response to issues and maintaining SLA.
 
 ---
+
 
 
 
